@@ -17,6 +17,8 @@ import { MovieProvider } from '../providers/movie/movie';
 import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.module';
 import { PerfilPageModule } from '../pages/perfil/perfil.module';
 import { SobrePageModule } from '../pages/sobre/sobre.module';
+import { FilmeDetalhesPageModule } from '../pages/filme-detalhes/filme-detalhes.module';
+import { FeedPage } from '../pages/feed/feed';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { SobrePageModule } from '../pages/sobre/sobre.module';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { SobrePageModule } from '../pages/sobre/sobre.module';
     HttpModule,
     ConfiguracoesPageModule,
     PerfilPageModule,
-    SobrePageModule
+    SobrePageModule,
+    FilmeDetalhesPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
