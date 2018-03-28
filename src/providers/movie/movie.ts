@@ -19,4 +19,8 @@ export class MovieProvider {
     return this.http.get(this.baseApiPath + "/movie/popular?api_key=7332b758091b4cb971dc0d532693ed9a");
   }
 
+  getMovieDetail(filmeid){
+    return this.http.get(this.baseApiPath + `/movie/${filmeid}?api_key=7332b758091b4cb971dc0d532693ed9a`);
+  }
+
 }

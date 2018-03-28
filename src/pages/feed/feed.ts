@@ -73,7 +73,7 @@ export class FeedPage {
 
   abrirDetalhes(filme){
     console.log(filme);
-    this.navCtrl.push(FilmeDetalhesPage);
+    this.navCtrl.push(FilmeDetalhesPage, { id: filme.id });
   }
 
   carregarFilmes(){
